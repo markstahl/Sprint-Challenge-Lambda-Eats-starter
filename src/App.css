@@ -4,8 +4,9 @@ html {
 
 nav {
   display: flex;
-  background: rgb(166,159,159);
-  background: linear-gradient(180deg, rgba(166,159,159,1) 0%, rgba(47,47,47,1) 4%, rgba(111,105,105,1) 95%);
+  background-image: url('https://digitalmarketing.blob.core.windows.net/11243/images/items/image534760.jpg');
+  background-size: cover;
+  background-position: center;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
@@ -14,6 +15,8 @@ nav {
   font-family: "Hot Pizza";
   font-size: 350%;
   color: white;
+  text-shadow: 3px 3px #000000;
+  border-bottom: 2px solid black
 }
 
 .App {
@@ -65,17 +68,17 @@ select {
 
 select:focus {
   outline: none;
-  border-color: yellow;
+  border-color: maroon;
 }
 
 input:focus {
   outline: none;
-  border-color: yellow;
+  border-color: maroon;
 }
 
 button {
   width: 150px;
-  display: inline-block;
+  display: inline-flex;
   padding: 8px 11px;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -88,6 +91,7 @@ button {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
 }
 
 button:hover {
