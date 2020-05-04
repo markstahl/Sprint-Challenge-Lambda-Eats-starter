@@ -19,6 +19,9 @@ describe("Testing Form", function() {
         cy.get('[data-cy="onions"]')
         .check()
         .should("be.checked")
+        cy.get('[data-cy="specialrequest"]')
+        .type("Well done please")
+        .should("have.value", "Well done please");
         cy.contains("Place Order")
         .click();
     });

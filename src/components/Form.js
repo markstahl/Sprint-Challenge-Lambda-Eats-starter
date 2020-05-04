@@ -169,9 +169,11 @@ export default function Form() {
             <label htmlFor="specialrequest">
                 Please Enter Any Special Requests
                 <textarea
+                    id="specialrequest"
                     name="specialrequest"
                     onChange={inputChange}
                     value={formState.specialrequest}
+                    data-cy="specialrequest"
                 />
                 {errors.specialrequest.length > 0 ? (
                     <p className="error">{errors.specialrequest}</p>
@@ -181,7 +183,7 @@ export default function Form() {
             <button disabled={isButtonDisabled} type ="submit">
                 Place Order
             </button>
-            <pre>{JSON.stringify(post,null,2)}</pre>
+            {/* <pre>{JSON.stringify(post,null,2)}</pre> */}
         </form>
     )
 }
